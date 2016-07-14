@@ -1,0 +1,13 @@
+applications:
+- path: output/webApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: se-newofferings
+  host: se-newofferings
+  disk_quota: 1024M
+  services:
+  - SecureGateway-x2
+  - se-newofferings-personality_insights
+  env:
+    BLUEMIX_APP_MGMT_ENABLE: hc
